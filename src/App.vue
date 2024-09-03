@@ -22,6 +22,7 @@
 		},
 		data () {
 			return {
+				dateFrom: '',
 				modeList:[{"name":"Каталог", "mode":"price"}, {"name":"Поиск", "mode":"search"}, {"name":"Корзина", "mode":"cart"}],
 				currMode: {"name":"Каталог", "mode":"price"},
 				loadedStockItemsList: false,
@@ -31,6 +32,8 @@
 		},
 		methods: {
 			async getStockItemsList() {
+				// eslint-disable-next-line
+				this.dateFrom = _dateTime.substring( 0, 16 )
 				// eslint-disable-next-line
 				this.$store.commit( 'loadTable', { name: 'GroupsOfStockItemsList', table: _tableItems['#value'].GroupsOfStockItemsList})
 				// eslint-disable-next-line
