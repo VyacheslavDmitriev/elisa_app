@@ -3,14 +3,14 @@
 	font-style: normal;
 	font-weight: normal;
 	font-display: auto;
-	src: url('./font/ArialRoundedMTProCyr.woff') format('woff');
+	src: url('../font/ArialRoundedMTProCyr.woff') format('woff');
 }
 @font-face {
 	font-family: 'Arial Rounded MT Pro Cyr Bold';
 	font-style: normal;
 	font-weight: normal;
 	font-display: auto;
-	src: url('./font/ArialRoundedMTProCyr-Bold.ttf') format('truetype');
+	src: url('../font/ArialRoundedMTProCyr-Bold.ttf') format('truetype');
 }
 body {
 	font-family: "Arial Rounded MT Pro Cyr", Arial, sans-serif;

@@ -3,6 +3,7 @@
 		<button v-for="mode in modeList" :key="mode.id" @click="(currMode = mode)" class="sortopt" :class="{activated: currMode.mode == mode.mode}">{{mode.name}}</button>
 		<!-- <div id="cart-container"> {{cartSum}} <span class="rouble">Р</span></div> -->
 		<!-- <h3>{{currMode.name}}</h3> -->
+		<span>&nbsp;Дата актуальности цен:&nbsp;{{dateFrom}}</span>
 		<SearchItemsList v-if="loadedStockItemsList && currMode.mode == 'search'" />
 		<CartItemsList v-if="cartSum && loadedStockItemsList && currMode.mode == 'cart'" />
 		<p v-if="!cartSum && loadedStockItemsList && currMode.mode == 'cart'">В вашей корзине пусто</p>

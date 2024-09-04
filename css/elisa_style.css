@@ -68,7 +68,7 @@ td.tdname.elchild {
 }
 #ordercontainer {
 	color: white;
-	background:#055 url(./img/anal.png) no-repeat left center;
+	background:#055 url(../img/anal.png) no-repeat left center;
 	background-position-x: 25px; 
 	border-radius:25px;
 	box-shadow:0 0 10px 0 rgba(50,50,50,0.25);
@@ -108,7 +108,7 @@ td.tdname.elchild {
 	cursor: pointer;
 }
 #otvetcontainer span {
-	background:transparent url(./img/anal.png) no-repeat left center;
+	background:transparent url(../img/anal.png) no-repeat left center;
 	color:#FFF;
 	display:block;
 	font-family:ArialRnd, Arial;
@@ -172,13 +172,13 @@ td.tdname.elchild {
 }
 
 .catlevel {
-	background: url(./img/tribullet2.png) no-repeat left center;
+	background: url(../img/tribullet2.png) no-repeat left center;
 	cursor: pointer;
 	cursor: hand;
 	padding-left: 20px
 }
 .selectedRow {
-	background: url(./img/tribullet3.png) no-repeat left center;
+	background: url(../img/tribullet3.png) no-repeat left center;
 	color: #222;
 	font-weight: 700
 }
@@ -218,19 +218,19 @@ table.analysestable button {
 	color:#055;
 }
 table.analysestable button.membutton {
-	background:url(./img/analysis-add-text.png) no-repeat left center;
+	background:url(../img/analysis-add-text.png) no-repeat left center;
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
 }
 table.analysestable button.unmembutton {
-	background:url(./img/analysis-remove-text.png) no-repeat left center;
+	background:url(../img/analysis-remove-text.png) no-repeat left center;
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
 }
 table.analysestable button.unmembutton-order {
-	background:url(./img/analysis-remove-order-text.png) no-repeat center center;
+	background:url(../img/analysis-remove-order-text.png) no-repeat center center;
 }
 table.analysestable button.button-orange-border {
 	padding: 2px;
@@ -325,13 +325,13 @@ button.sortopt {
 		font-size: 18px;
 	}
 	table.analysestable button.membutton {
-		background:url(./img/analysis-add-text.png) no-repeat center center;
+		background:url(../img/analysis-add-text.png) no-repeat center center;
 		width: 70px;
 		height: 16px;
 		border-radius: 0;
 	}
 	table.analysestable button.unmembutton {
-		background:url(./img/analysis-remove-text.png) no-repeat center center;
+		background:url(../img/analysis-remove-text.png) no-repeat center center;
 		width: 70px;
 		height: 16px;
 		border-radius: 0;
