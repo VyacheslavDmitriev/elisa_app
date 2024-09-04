@@ -1,4 +1,5 @@
 echo off
+cd %PUBLIC%\Elisa
 for /f %%c in ('get_code.bat') do set code=%%c
 echo code --- %code%
 if %code%==200 (
