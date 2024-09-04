@@ -42,7 +42,7 @@
 </template>
 
 <script>
-	import {getCartSumDb} from '../price_elisa.js'
+	// import {getCartSumDb} from '../price_elisa.js'
 	import {getDownloadFile} from '../price_elisa.js'
 	import ModalFrame from './ModalFrame.vue'
 	import DeleteFromCartBtn from './DeleteFromCartBtn.vue'
@@ -143,7 +143,7 @@
 				})
 			},											
 			async clearCart () {
-				await getCartSumDb ( "clear" )
+				// await getCartSumDb ( "clear" )
 				this.$store.commit( 'setCart', null )
 				this.getItemsList()
 			},

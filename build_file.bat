@@ -5,5 +5,7 @@ if %code%==200 (
 	echo const _dateTime="%DATE% %TIME%" > actual_time.js
 	echo const _tableItems= > stock_items.js
 	type stock_items.json >> stock_items.js
+	echo const _coorderedItems= > coordered_items.js
+	type coordered_items.json >> coordered_items.js
 	echo Sucsess
 ) else echo Error

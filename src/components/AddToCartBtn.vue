@@ -4,7 +4,7 @@
 </template>
 
 <script>
-	import {getCartSumDb} from '../price_elisa.js'
+	// import {getCartSumDb} from '../price_elisa.js'
 	export default {
 		name: 'AddToCartBtn',
 		props: {
@@ -22,9 +22,9 @@
 				return item
 			},
 			async calculateCartSumm () {
-				const answer1c = await getCartSumDb ( this.uuidtoadd )
-				this.$store.commit( 'setCart', answer1c )
-				this.arrCart = this.$store.getters.CARTARR()
+				// const answer1c = await getCartSumDb ( this.uuidtoadd )
+				// this.$store.commit( 'setCart', answer1c )
+				// this.arrCart = this.$store.getters.CARTARR()
 			}
 		},
 		mounted () {

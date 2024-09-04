@@ -92,20 +92,10 @@
 				this.getCoorderedItems( this.coorderedUUIDs )
 			},
 			async getCoorderedItemsList() {
-				const answer1c = await fetch('/web_services/coordered/coordered_items.json', {
-					method: 'GET', // *GET, POST, PUT, DELETE, etc.
-					mode: 'no-cors', // no-cors, cors, *same-origin
-					cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-					credentials: 'same-origin', // include, *same-origin, omit
-					headers: {
-						'Content-Type': 'application/json',
-						// 'Content-Type': 'application/x-www-form-urlencoded',
-					},
-					redirect: 'follow', // manual, *follow, error
-					referrer: 'no-referrer', // no-referrer, *client
-				}).then( response => { return response.json() });
-				if ( answer1c && answer1c["#value"].OperationResult ) {
-					this.coorderedList = answer1c["#value"].CoOrderedMainStockItemsList
+				// eslint-disable-next-line
+				if ( _coorderedItems && _coorderedItems["#value"].OperationResult ) {
+					// eslint-disable-next-line
+					this.coorderedList = _coorderedItems["#value"].CoOrderedMainStockItemsList
 				}
 			},
 			isComplex ( complexType ) {

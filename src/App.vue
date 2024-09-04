@@ -11,7 +11,7 @@
 </template>
 
 <script>
-	import {getCartSumDb} from './price_elisa.js'
+	// import {getCartSumDb} from './price_elisa.js'
 	import GroupsOfStockItemsList from './components/GroupsOfStockItemsList.vue'
 	import CartItemsList from './components/CartItemsList.vue'
 	import SearchItemsList from './components/SearchItemsList.vue'
@@ -41,11 +41,12 @@
 				this.loadedStockItemsList = true
 			},
 			async getInitCart () {
-				const answer1c = await getCartSumDb (  )
-				if ( answer1c && answer1c['#value'].OperationResult.Result )  {
-					this.$store.commit( 'setCart', answer1c )
-					this.loadedCart = true
-				}
+				// const answer1c = await getCartSumDb (  )
+				// if ( answer1c && answer1c['#value'].OperationResult.Result )  {
+				// 	this.$store.commit( 'setCart', answer1c )
+				// 	this.loadedCart = true
+				// }
+				this.loadedCart = true
 			}
 		},
 		watch: {
