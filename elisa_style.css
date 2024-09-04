@@ -1,0 +1,340 @@
+#elisa-price {
+	margin-bottom: 15px;
+}
+#analsearchwrapper {
+	margin-bottom: 15px;
+	display: none;
+}
+#el-search-tb {
+	background-color: #c7f9ef;
+}
+#el-coordered-tb {
+	background-color: #fcd4b5;
+}
+tr.el-header td {
+	font-weight: 600;
+	font-size: 16px;
+}
+tr.elchild {
+	background-color: #d4f6f1;
+}
+tr.analrow.elselected {
+	border: #055 solid 2px;
+}
+tr.analrow.complexrow {
+	background-color: #aee5dd;
+}
+tr.analrow.eldouble {
+	background-color: #90a4c8;
+}
+tr.analrow td span.eldouble {
+	background-color: rgb(212, 69, 69);
+}
+td.tdname {
+	cursor: pointer;
+}
+td.tdname.elchild {
+	padding-left: 2em;
+}
+#elisa-alphabetical-index a {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.content-container {
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 25px;
+	background-color: white;
+	min-height: 655px;
+}
+#elisa-result {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 555px;
+	padding: 25px;
+	font-size: 1.5em;
+}
+#elisa-alphabetical-index {
+	margin: 25px;
+	padding: 10px;
+}
+.content-container .vue-app-elisa {
+	padding: 10px;
+}
+#patient-fio button {
+	color: white;
+}
+#ordercontainer {
+	color: white;
+	background:#055 url(./img/anal.png) no-repeat left center;
+	background-position-x: 25px; 
+	border-radius:25px;
+	box-shadow:0 0 10px 0 rgba(50,50,50,0.25);
+	display: block;
+	height:90px;
+	position:static;
+	/* width:210px; */
+	text-decoration:none;
+	cursor: pointer;
+	line-height: 16px;
+	margin-left: 5px;
+}
+#ordercontainer:hover {
+	background-color: #077;
+}
+#ordercontainer span {
+	display: inline-block;
+	margin-top: 18px;
+	margin-left: 74px;
+	color: white;
+	font-weight: 500;
+}
+#ordercontainer span:last-child {
+	margin-top: 7px;
+}
+#otvetcontainer {
+	background: #db5a0d;
+	border-radius:25px;
+	box-shadow:0 0 10px 0 rgba(50,50,50,0.25);
+	height:90px;
+	position:static;
+	display: inline-block;
+	right:238px;
+	top:24px;
+	/* width:200px; */
+	text-decoration:none;
+	cursor: pointer;
+}
+#otvetcontainer span {
+	background:transparent url(./img/anal.png) no-repeat left center;
+	color:#FFF;
+	display:block;
+	font-family:ArialRnd, Arial;
+	font-size:15px;
+	font-weight:700;
+	margin-left:24px;
+	margin-top:18px;
+	padding:10px 10px 10px 50px;
+	text-align:left;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+#otvetcontainer:hover{
+	background-color: #e09400;
+	color: #444;
+}
+.sortaway {
+	color: #099;
+	font-weight: 700;
+	margin-left: 40px
+}
+.content-container .vue-app-elisa .sortopt {
+	border-radius:30px;
+	color:#009ae3;
+	background-color: #cccccc;
+	cursor:pointer;
+	display:inline-block;
+	font-family:ArialRnd, Arial;
+	font-size:14px;
+	font-weight:700;
+	margin-right:10px;
+	padding:7px 15px
+}
+.content-container .vue-app-elisa .sortopt,.sortopt.activated:hover {
+	border: none;
+}
+.content-container button.activated, button.button-green {
+	background:#099;
+	color:#FFF
+}
+.sortopt span {
+	border-bottom: 1px dashed #009ae3
+}
+
+.sortaway span {
+	border-bottom: 1px dashed #099
+}
+
+.sortopt:hover, .content-container button.sortopt:hover {
+	background: #ccc
+}
+
+.sortaway.activated {
+	background: #069 !important;
+	color: #FFF
+}
+
+.activated span {
+	border-bottom-color: transparent
+}
+
+.catlevel {
+	background: url(./img/tribullet2.png) no-repeat left center;
+	cursor: pointer;
+	cursor: hand;
+	padding-left: 20px
+}
+.selectedRow {
+	background: url(./img/tribullet3.png) no-repeat left center;
+	color: #222;
+	font-weight: 700
+}
+table.analysestable {
+	border: 0;
+	margin: 0;
+	width: 100%
+}
+.vue-app-elisa .catlevel-container {
+	margin-top: 15px;
+}
+table.analysestable tr td {
+	color: #444;
+	font-size: 14px;
+	line-height: 140%;
+	border-bottom: 1px #D6D6D6 solid;
+	padding-top: 15px;
+}
+table.analysestable tr td.tdname {
+	max-width: 130px;
+}
+table.analysestable tr:last-child td {
+	border-bottom: 0 !important
+}
+table.analysestable button {
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display:inline-block;
+	height:16px;
+	margin:1px auto;
+	vertical-align:middle;
+	width:70px	
+}
+.analysestable .fa-question-circle {
+	font-size: 28px;
+	color:#055;
+}
+table.analysestable button.membutton {
+	background:url(./img/analysis-add-text.png) no-repeat left center;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+}
+table.analysestable button.unmembutton {
+	background:url(./img/analysis-remove-text.png) no-repeat left center;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+}
+table.analysestable button.unmembutton-order {
+	background:url(./img/analysis-remove-order-text.png) no-repeat center center;
+}
+table.analysestable button.button-orange-border {
+	padding: 2px;
+	background:#FFF;
+	border:1px #db5a0d solid;
+	border-radius: 25px;
+	color:#444;
+	font-size:70%;
+	text-decoration: none;
+	text-transform: none;
+}
+table.analysestable button.button-orange-border:hover {
+	background:#db5a0d;
+	color:#FFF
+}
+table.analysestable button.button-green {
+	padding: 10px;
+	height: auto;
+	width: auto;
+	border-radius: 25px;
+	background:#099;
+	color:#FFF
+}
+#elisa-price .sortopt {
+	margin-bottom: 14px;
+}
+#cart-container {
+	display: inline-block;
+}
+.catlevel {
+	margin-left: 0em;
+}
+.catlevel-container .group-list-inner {
+	margin-left: 0.5em;
+}
+.analysestable {
+	display: table;
+	border-collapse: collapse;
+}
+.analysestable td {
+	padding: 2px;
+	border-width: 0 0 1px 0;
+}
+.analysestable .tdoldprice {
+	text-decoration-line: line-through;
+}
+.analysestable .tdprice.discount{
+	color: red;
+}
+button.sortopt {
+	border: none;
+}
+.btn_radiuse {
+	border:none
+}
+.small-label {
+	font-size: 9px;
+	border-radius: 3px;
+	padding: 1px 2px;
+	color: white;
+	white-space: nowrap;
+}
+.vcomplexe {
+	background-color: #00A892;
+}
+.complex {
+	background-color: #055;
+}
+#el-search-tb td, #el-coordered-tb td {
+	border-color:  white;
+}
+#elisa-price button:nth-child(2) {
+	display: none;
+}
+@media screen and ( min-width: 1025px ) {
+	#analsearchwrapper {
+		display: block;
+	}
+	#elisa-price button:nth-child(2) {
+		display: inline-block;
+	}
+	table.analysestable tr td {
+		color: #444;
+		font-size: 14px;
+		line-height: 140%;
+		border-bottom: 1px #D6D6D6 solid;
+	}
+	.analysestable td {
+		padding: 10px;
+	}
+	.analysestable .fa-question-circle {
+		font-size: 18px;
+	}
+	table.analysestable button.membutton {
+		background:url(./img/analysis-add-text.png) no-repeat center center;
+		width: 70px;
+		height: 16px;
+		border-radius: 0;
+	}
+	table.analysestable button.unmembutton {
+		background:url(./img/analysis-remove-text.png) no-repeat center center;
+		width: 70px;
+		height: 16px;
+		border-radius: 0;
+	}
+
+}

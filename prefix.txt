@@ -1,7 +1,0 @@
-text 
-text 
-text 
-stock_items 
-text 
-text 
-text 
