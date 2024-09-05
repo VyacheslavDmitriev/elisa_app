@@ -2816,6 +2816,41 @@ const _tableItems=
 "Price": 230,
 "PeriodOfPerformance": 1,
 "ComplexUUIDs": [
+"e5f7a77a-ab95-11df-8c60-000bcd3cf4fc",
+"d280dbb5-2f6a-11ee-946a-b0c98764d36a",
+"115db0a0-6975-11ed-be27-e15d0c7f5b77"
+]
+},
+{
+"UUID": "e5f7a77a-ab95-11df-8c60-000bcd3cf4fc",
+"ParentUUIDs": [
+"44f63a00-ba34-11e7-b6da-a6c295df55d3",
+"44f63a08-ba34-11e7-b6da-a6c295df55d3",
+"4af31be4-ba34-11e7-b6da-a6c295df55d3",
+"4af31be8-ba34-11e7-b6da-a6c295df55d3",
+"50fa6c15-ba34-11e7-b6da-a6c295df55d3",
+"4af31bec-ba34-11e7-b6da-a6c295df55d3",
+"4af31be0-ba34-11e7-b6da-a6c295df55d3",
+"4af31be1-ba34-11e7-b6da-a6c295df55d3",
+"4af31be9-ba34-11e7-b6da-a6c295df55d3",
+"50fa6c17-ba34-11e7-b6da-a6c295df55d3"
+],
+"Code": "3.19  ",
+"NomenclatorialType": "ЛабораторноеИсследование",
+"NomenclatorialCode": "A09.05.028.   ",
+"Description": "Холестерин ЛПНП",
+"DescriptionForWeb": "Холестерин - ЛПНП (LDL Cholesterol)",
+"DetailedDescriptionForWeb": "&lt;html dir=&quot;ltr&quot;&gt;&lt;head&gt;\n&lt;meta content=&quot;text/html;charset=utf-8&quot; http-equiv=&quot;content-type&quot;&gt;\n&lt;meta name=&quot;GENERATOR&quot; content=&quot;MSHTML 11.00.9600.18739&quot;&gt;&lt;/head&gt;\n&lt;body&gt;\n&lt;p&gt;&lt;em&gt;Low-density lipoprotein cholesterol&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;- фактор риска развития атеросклероза и ишемической болезни сердца - &quot;плохой холестерин&quot;. Основные показания к применению: атеросклероз, ишемическая болезнь сердца (ИБС), заболевания печени, ожирение, сахарный диабет.&lt;/p&gt;\n&lt;p&gt;Холестерин – это компонент клеточных мембран, а также предшественник стероидных гормонов и желчных кислот, синтезируемый клетками и получаемый с пищей. Холестерин транспортируется в плазме с помощью липопротеинов, а именно комплексов липидов и аполипопротеинов. Существует четыре класса липопротеинов:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=&quot;http://mdc-elisa.ru/holesterin-lpvp-vysokoy-plotnosti&quot;&gt;липопротеины высокой плотности (ЛПВП)&lt;/a&gt; \n&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://mdc-elisa.ru/holesterin-lpnp-nizkoy-plotnosti&quot;&gt;липопротеины низкой плотности (ЛПНП)&lt;/a&gt; \n&lt;/li&gt;&lt;li&gt;липопротеины очень низкой плотности \n&lt;/li&gt;&lt;li&gt;хиломикроны. &lt;/li&gt;&lt;/ul&gt;\n&lt;p&gt;ЛПНП принимают участие в транспорте холестерина к периферийным клеткам, тогда как ЛПВП отвечают за извлечение холестерина из клеток. Четыре разных класса липопротеинов проявляют явно выраженную взаимосвязь с коронарным атеросклерозом. ЛПНП-холестерин вности вклад в формирование атеросклеротических бляшек внутри интимы артерий и неотделим от ишемической болезни сердца (ИБС). Повышенная концентрация ЛПНП-холестерина указывает на высокий риск даже в том случае, когда общий холестерин находится в пределах нормы. ЛПВП-холестерин обладает защитным действием, препятствующим формированию бляшек и развитию ИБС. На самом деле, низкие значения ЛПВП-холестерина представляют собой независимый фактор риска. Определение лишь уровня общего холестерина используется в целях скрининга, тогда как для более точной оценки риска необходимо кроме этого измерять ЛПВП- и ЛПНП-холестерин. В последние несколько лет многочисленные клинические испытания с использованием диет, изменения образа жизни и/или лекарств показали, что уменьшение уровня холестерина и ЛПНП-холестерина радикально снижают риск ИБС.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;u&gt;&lt;strong&gt;Увеличение содержания ЛПНП&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;\n&lt;p&gt;1). Наследственные гиперхолестеринемии.&lt;/p&gt;\n&lt;p&gt;2). Сахарный диабет.&lt;/p&gt;\n&lt;p&gt;3). Нефротический синдром, хроническая почечная недостаточность (ХПН).&lt;/p&gt;\n&lt;p&gt;4). Заболевания печени.&lt;/p&gt;\n&lt;p&gt;5). Гипотиреоз.&lt;/p&gt;\n&lt;p&gt;6). Синдром Кушинга.&lt;/p&gt;\n&lt;p&gt;7). Ожирение, повышенное содержание холестерина в рационе.&lt;/p&gt;\n&lt;p&gt;8). Анорексия при нервных заболеваниях.&lt;/p&gt;\n&lt;p&gt;9). Порфирии.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;u&gt;&lt;strong&gt;Уменьшение содержания ЛПНП&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;\n&lt;p&gt;1). Гипо- и альфа-бета-липопротеинемия.&lt;/p&gt;\n&lt;p&gt;2). Дефицит альфа-липопротеина (болезнь Tangier).&lt;/p&gt;\n&lt;p&gt;3). Гипертиреоз.&lt;/p&gt;\n&lt;p&gt;4). Синдром Рейе.&lt;/p&gt;\n&lt;p&gt;5). Хроническая анемия.&lt;/p&gt;\n&lt;p&gt;6). Пища с высоким содержанием полиненасыщенных жирных кислот.&lt;/p&gt;\n&lt;p&gt;7). Синдром мальабсорбции.&lt;/p&gt;\n&lt;p&gt;8). Хронические заболевания легких.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;",
+"Tags": "Холестерин-ЛПНП; Холестерин липопротеинов низкой плотности; ЛПНП; Cholesterol LDL; LDLC; Бета-холестерин, ",
+"Biomaterial": {
+"UUID": "a40d08f7-64d1-11e0-82ac-000bcd3cf4fc",
+"Description": "Кровь",
+"SamplingServiceUUID": "a2ef7120-0891-11e6-b799-a6c295df55d3"
+},
+"PriceWithoutDiscount": 200,
+"Price": 200,
+"PeriodOfPerformance": 1,
+"ComplexUUIDs": [
 "d280dbb5-2f6a-11ee-946a-b0c98764d36a",
 "115db0a0-6975-11ed-be27-e15d0c7f5b77"
 ]
@@ -5877,6 +5912,7 @@ const _tableItems=
 "PeriodOfPerformance": 1,
 "ComplexUUIDs": [
 "ce2094d8-769a-11eb-8963-db2c82d3718c",
+"e5f7a77a-ab95-11df-8c60-000bcd3cf4fc",
 "d280dbb5-2f6a-11ee-946a-b0c98764d36a",
 "115db0a0-6975-11ed-be27-e15d0c7f5b77"
 ]
@@ -5921,6 +5957,7 @@ const _tableItems=
 "c09e3ddb-34ca-11ed-81b8-f728d0894618",
 "31d9c201-cf9d-11ed-857c-ccd608fa5c53",
 "ce2094d8-769a-11eb-8963-db2c82d3718c",
+"e5f7a77a-ab95-11df-8c60-000bcd3cf4fc",
 "d280dbb5-2f6a-11ee-946a-b0c98764d36a",
 "115db0a0-6975-11ed-be27-e15d0c7f5b77",
 "74b64c7e-6976-11ed-be27-e15d0c7f5b77",
@@ -13736,7 +13773,10 @@ const _tableItems=
 },
 "PriceWithoutDiscount": 550,
 "Price": 550,
-"PeriodOfPerformance": 1
+"PeriodOfPerformance": 1,
+"ComplexUUIDs": [
+"e5f7a77a-ab95-11df-8c60-000bcd3cf4fc"
+]
 },
 {
 "UUID": "f740d0a4-8651-11e7-bbcf-a6c295df55d3",

@@ -1,0 +1,1 @@
+start /min %PUBLIC%\Elisa\build_file.bat

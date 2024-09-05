@@ -1,6 +1,7 @@
+coordered_items.json
+stock_items.json
 .DS_Store
 node_modules
-/dist
 
 
 # local env files
