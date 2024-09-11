@@ -1,8 +1,8 @@
 # elisa_price
 
 ## Project setup
-clone to %PUBLIC%\Elisa
-run install.bat with administrative
+clone to %PUBLIC%\Elisa, 
+run install.bat with administrative, 
 run run.bat
 
 ### Compiles and hot-reloads for development
