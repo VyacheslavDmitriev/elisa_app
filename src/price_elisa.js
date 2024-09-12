@@ -17,7 +17,6 @@ export const getCartSumDb = function  ( uuidtoadd = null ) {
 	var cartLabel = document.getElementById( 'memory-price' )
 	var answer1c = null
 	var arrCartUUIDs = getCartCookies()
-	console.log( arrCartUUIDs )    
 	document.cookie = `cartsession=${Date.now()}; max-age=360000; path=/`;
 	// add item or remove item from cart
 	if ( uuidtoadd == "clear") {
@@ -27,7 +26,7 @@ export const getCartSumDb = function  ( uuidtoadd = null ) {
 		document.cookie = `cart_sum=0; max-age=360000; path=/`
 	}
 	if ( uuidtoadd && !arrCartUUIDs.find( item => { return item == uuidtoadd } ) ) arrCartUUIDs.push( uuidtoadd )
-	else arrCartUUIDs = arrCartUUIDs.filter( item => item != uuidtoadd )
+		else arrCartUUIDs = arrCartUUIDs.filter( item => item != uuidtoadd )
 	// console.log(`arrCookies ${arrCartUUIDs}, updated ${updatedArr} = ${uuidtoadd}`)  
 	if ( arrCartUUIDs.length == 0 ) {
 		document.cookie = `cart=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/`
@@ -36,24 +35,25 @@ export const getCartSumDb = function  ( uuidtoadd = null ) {
 	}
 	if ( arrCartUUIDs.length > 1 ) document.cookie = `cart=${ arrCartUUIDs.join( '| ')}; max-age=360000; path=/`
 	if ( arrCartUUIDs.length == 1 ) document.cookie = `cart=${ arrCartUUIDs[0] }; max-age=360000; path=/`
-
+	
 	var orderStockItems = []
+	// console.log( arrCartUUIDs )    
 	arrCartUUIDs.forEach( UUID => {
 		orderStockItems.push( UUID )
 	})
 
 	if ( arrCartUUIDs.length >= 1 ) {
-		answer1c = { "#value": { TotalSum: 555, Products : orderStockItems } }
-		if( answer1c['#value'].TotalSum ) {
-			document.cookie = `cart_sum=${ answer1c['#value'].TotalSum }; max-age=360000; path=/`
-			cartLabel.innerText = answer1c['#value'].TotalSum
-		}
+		answer1c = { "#value": { Products : orderStockItems } }
 		return answer1c['#value']
 	}
-	else return null
+	else return []
 	}
-
-	export const getDownloadFile = async function  () {
+export const updateTotal = function ( sum ) {
+	var cartLabel = document.getElementById( 'memory-price' )
+	document.cookie = `cart_sum=${ sum }; max-age=360000; path=/`
+	cartLabel.innerText = sum
+}
+export const getDownloadFile = async function  () {
 	var answer1c = null
 	var arrCartUUIDs = getCartCookies()
 	console.log( arrCartUUIDs )     

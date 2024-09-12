@@ -4,6 +4,7 @@
 </template>
 
 <script>
+	import {updateTotal} from '../price_elisa.js'
 	import {getCartSumDb} from '../price_elisa.js'
 	export default {
 		name: 'DeleteFromCartBtn',
@@ -16,9 +17,11 @@
 			}
 		},
 		methods: {
-			async calculateCartSumm () {
-				const answer1c = await getCartSumDb ( this.uuidtoadd )
-				this.$store.commit( 'setCart', answer1c )
+			calculateCartSumm () {
+				const answer1c = getCartSumDb ( this.uuidtoadd )
+				// console.log(answer1c);
+				this.$store.commit( 'setCart', answer1c.Products )
+				updateTotal( this.$store.getters.CARTSUM() )
 				this.$emit('deletefromcart')
 			}
 		}

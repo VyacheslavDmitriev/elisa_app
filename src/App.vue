@@ -4,7 +4,7 @@
 		<!-- <div id="cart-container"> {{cartSum}} <span class="rouble">Р</span></div> -->
 		<!-- <h3>{{currMode.name}}</h3> -->
 		<span>&nbsp;Дата актуальности цен:&nbsp;{{dateFrom}}</span>
-		<span id="memory-price"></span>
+		&nbsp;&nbsp;&nbsp;Итого:<span id="memory-price"></span>&nbsp;р
 		<SearchItemsList v-if="loadedStockItemsList && currMode.mode == 'search'" />
 		<CartItemsList v-if="cartSum && loadedStockItemsList && currMode.mode == 'cart'" />
 		<p v-if="!cartSum && loadedStockItemsList && currMode.mode == 'cart'">В вашей корзине пусто</p>
@@ -14,6 +14,7 @@
 
 <script>
 	import {getCartSumDb} from './price_elisa.js'
+	import {updateTotal} from './price_elisa.js'
 	import GroupsOfStockItemsList from './components/GroupsOfStockItemsList.vue'
 	import CartItemsList from './components/CartItemsList.vue'
 	import SearchItemsList from './components/SearchItemsList.vue'
@@ -50,7 +51,8 @@
 					this.$store.commit( 'setCart', answer1c.Products )
 					this.loadedCart = true
 				}
-				// this.loadedCart = true
+				this.loadedCart = true
+				updateTotal( this.$store.getters.CARTSUM() )
 			}
 		},
 		watch: {

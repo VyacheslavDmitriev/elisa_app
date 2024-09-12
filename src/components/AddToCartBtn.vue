@@ -4,6 +4,7 @@
 </template>
 
 <script>
+	import {updateTotal} from '../price_elisa.js'
 	import {getCartSumDb} from '../price_elisa.js'
 	export default {
 		name: 'AddToCartBtn',
@@ -24,10 +25,9 @@
 			async calculateCartSumm () {
 				const answer1c = await getCartSumDb ( this.uuidtoadd )
 				this.$store.commit( 'emptyCart' )
-				answer1c.Products.forEach( uuid => {
-					this.$store.commit( 'addToCart', uuid )
-				});			
+				this.$store.commit( 'setCart', answer1c.Products )		
 				this.arrCart = this.$store.getters.CARTARR()
+				updateTotal( this.$store.getters.CARTSUM() )
 			}
 		},
 		mounted () {

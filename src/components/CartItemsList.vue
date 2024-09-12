@@ -29,8 +29,9 @@
 				<tr class="analrow">
 					<!-- <td class="tdcode"></td> -->
 					
-					<td class="tdname" colspan="2"><button @click="printReferal" class="button btn_radiuse button-green full-width">Сохранить PDF</button></td>
-					
+					<td class="tdname" colspan="2">
+						<!-- <button @click="printReferal" class="button btn_radiuse button-green full-width">Сохранить PDF</button> -->
+					</td>					
 					<td class="tdprice"></td>
 					<td class="tdduration"></td>
 					<td class="tdmemorize"></td>
@@ -42,7 +43,7 @@
 </template>
 
 <script>
-	// import {getCartSumDb} from '../price_elisa.js'
+	import {getCartSumDb} from '../price_elisa.js'
 	import {getDownloadFile} from '../price_elisa.js'
 	import ModalFrame from './ModalFrame.vue'
 	import DeleteFromCartBtn from './DeleteFromCartBtn.vue'
@@ -143,8 +144,8 @@
 				})
 			},											
 			async clearCart () {
-				// await getCartSumDb ( "clear" )
-				this.$store.commit( 'setCart', null )
+				getCartSumDb ( "clear" )
+				this.$store.commit( 'emptyCart' )
 				this.getItemsList()
 			},
 			async printReferal() {
