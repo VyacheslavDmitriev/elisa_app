@@ -4,7 +4,7 @@
 </template>
 
 <script>
-	// import {getCartSumDb} from '../price_elisa.js'
+	import {getCartSumDb} from '../price_elisa.js'
 	export default {
 		name: 'AddToCartBtn',
 		props: {
@@ -29,7 +29,6 @@
 			}
 		},
 		mounted () {
-			
 			this.arrCart = this.$store.getters.CARTARR()
 		}
 	}

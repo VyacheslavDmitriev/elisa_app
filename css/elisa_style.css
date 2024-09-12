@@ -1,6 +1,12 @@
 #elisa-price {
 	margin-bottom: 15px;
 }
+#memory-price {
+	font-size: 2em;
+	margin-left: 2em;
+	display: inline-block;
+	color: #00A892;
+}
 #analsearchwrapper {
 	margin-bottom: 15px;
 	display: none;

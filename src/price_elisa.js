@@ -43,12 +43,12 @@ export const getCartSumDb = async function  ( uuidtoadd = null ) {
 	})
 
 	if ( arrCartUUIDs.length >= 1 ) {
-		const answer1c = { "#value": {TotalSum: 555, OrderedStockItems : []} }
+		answer1c = { "#value": {TotalSum: 555, OrderedStockItems : []} }
 		if( answer1c['#value'].TotalSum ) {
 			document.cookie = `cart_sum=${ answer1c['#value'].TotalSum }; max-age=360000; path=/`
 			cartLabel.innerText = answer1c['#value'].TotalSum
 		}
-		return answer1c
+		return answer1c['#value']
 	}
 	else return null
 	}

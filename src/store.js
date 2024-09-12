@@ -9,7 +9,7 @@ export const store = new Vuex.Store({
         GroupsOfStockItemsList: null,
         StockItemsList: null
       },
-      cart: null
+      cart: { "#value": { TotalSum: 0, OrderedStockItems: [] } }
     },
     getters: {
       TABLEBYNAME: state => name => {
