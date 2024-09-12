@@ -22,9 +22,10 @@
 				return item
 			},
 			async calculateCartSumm () {
-				// const answer1c = await getCartSumDb ( this.uuidtoadd )
-				// this.$store.commit( 'setCart', answer1c )
-				// this.arrCart = this.$store.getters.CARTARR()
+				// const answer1c =  
+				const answer1c = await getCartSumDb ( this.uuidtoadd )
+				this.$store.commit( 'setCart', answer1c )
+				this.arrCart = this.$store.getters.CARTARR()
 			}
 		},
 		mounted () {

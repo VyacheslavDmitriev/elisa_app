@@ -1,12 +1,83 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Vue App</title>
-  <link href="/js/app.js" rel="preload" as="script"><link href="/js/chunk-vendors.js" rel="preload" as="script"></head>
-  <body>
-    <div id="app"></div>
-  <script type="text/javascript" src="/js/chunk-vendors.js"></script><script type="text/javascript" src="/js/app.js"></script></body>
-</html>
+<head><link href="/js/app.js" rel="preload" as="script"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  [eslint] ESLint is not a constructor
+  
+  - compiler.js:79 
+    [elisa_app]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:343 
+    [elisa_app]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 
+    [elisa_app]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 
+    [elisa_app]/[webpack]/lib/Compiler.js:678:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1423 
+    [elisa_app]/[webpack]/lib/Compilation.js:1423:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1414 
+    [elisa_app]/[webpack]/lib/Compilation.js:1414:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1409 
+    [elisa_app]/[webpack]/lib/Compilation.js:1409:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1405 
+    [elisa_app]/[webpack]/lib/Compilation.js:1405:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1342 Compilation.seal
+    [elisa_app]/[webpack]/lib/Compilation.js:1342:27
+  
+  - Compiler.js:675 
+    [elisa_app]/[webpack]/lib/Compiler.js:675:18
+  
+  - Compilation.js:1261 
+    [elisa_app]/[webpack]/lib/Compilation.js:1261:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [elisa_app]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1253 Compilation.finish
+    [elisa_app]/[webpack]/lib/Compilation.js:1253:28
+  
+  - Compiler.js:672 
+    [elisa_app]/[webpack]/lib/Compiler.js:672:17
+  
+  
+  - Compilation.js:1185 
+    [elisa_app]/[webpack]/lib/Compilation.js:1185:12
+  
+  - Compilation.js:1097 
+    [elisa_app]/[webpack]/lib/Compilation.js:1097:9
+  
+  - task_queues:77 process.processTicksAndRejections
+    node:internal/process/task_queues:77:11
+  
+</pre><script type="text/javascript" src="/js/app.js"></script>

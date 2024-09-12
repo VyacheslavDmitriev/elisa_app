@@ -29,7 +29,7 @@ export const store = new Vuex.Store({
             state.tables[tableData.name] = tableData.table
         },
         setCart( state, cartData ) {
-          state.cart = cartData
+          state.cart['#value'] = cartData
         }
     }
   });

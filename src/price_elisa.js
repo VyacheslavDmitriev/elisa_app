@@ -39,21 +39,11 @@ export const getCartSumDb = async function  ( uuidtoadd = null ) {
 
 	var orderStockItems = []
 	arrCartUUIDs.forEach( UUID => {
-	orderStockItems.push( { "UUID": UUID } )
+		orderStockItems.push( { "UUID": UUID } )
 	})
+
 	if ( arrCartUUIDs.length >= 1 ) {
-		answer1c = await fetch('/web_services/get_calculation_cart_db.php', {
-		method: 'POST', // *GET, POST, PUT, DELETE, etc.
-		mode: 'no-cors', // no-cors, cors, *same-origin
-		cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-		credentials: 'same-origin', // include, *same-origin, omit
-		redirect: 'follow', // manual, *follow, error
-		referrer: 'no-referrer', // no-referrer, *client            
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify( {"OrderedStockItems": orderStockItems} )
-		}).then( response => { return response.json() })
+		const answer1c = { "#value": {TotalSum: 555, OrderedStockItems : []} }
 		if( answer1c['#value'].TotalSum ) {
 			document.cookie = `cart_sum=${ answer1c['#value'].TotalSum }; max-age=360000; path=/`
 			cartLabel.innerText = answer1c['#value'].TotalSum
