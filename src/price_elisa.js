@@ -17,7 +17,7 @@ export const getCartSumDb = async function  ( uuidtoadd = null ) {
 	var cartLabel = document.getElementById( 'memory-price' )
 	var answer1c = null
 	var arrCartUUIDs = getCartCookies()
-	console.log( arrCartUUIDs )    
+	// console.log( arrCartUUIDs )    
 	document.cookie = `cartsession=${Date.now()}; max-age=360000; path=/`;
 	// add item or remove item from cart
 	if ( uuidtoadd == "clear") {
@@ -39,11 +39,11 @@ export const getCartSumDb = async function  ( uuidtoadd = null ) {
 
 	var orderStockItems = []
 	arrCartUUIDs.forEach( UUID => {
-		orderStockItems.push( { "UUID": UUID } )
+		orderStockItems.push( UUID )
 	})
 
 	if ( arrCartUUIDs.length >= 1 ) {
-		answer1c = { "#value": {TotalSum: 555, OrderedStockItems : []} }
+		answer1c = { "#value": { TotalSum: 555, Products : orderStockItems } }
 		if( answer1c['#value'].TotalSum ) {
 			document.cookie = `cart_sum=${ answer1c['#value'].TotalSum }; max-age=360000; path=/`
 			cartLabel.innerText = answer1c['#value'].TotalSum

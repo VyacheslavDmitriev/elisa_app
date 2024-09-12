@@ -28,8 +28,17 @@ export const store = new Vuex.Store({
         loadTable( state, tableData ) {
             state.tables[tableData.name] = tableData.table
         },
-        setCart( state, cartData ) {
-          state.cart['#value'] = cartData
-        }
+        setCart( state, cartArr ) {
+			cartArr.forEach( element => {
+				this.addToCart( state, element )
+			});
+        },
+		addToCart( state, uuid ) {
+			let product = state.tables.StockItemsList.find( element => { return element.UUID == uuid } )
+			state.cart['#value'].OrderedStockItems.push( product )
+		},
+		emptyCart( state ) {
+			state.cart = { "#value": { TotalSum: 0, OrderedStockItems: [] } }
+		}
     }
   });

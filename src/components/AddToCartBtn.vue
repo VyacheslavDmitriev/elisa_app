@@ -22,9 +22,11 @@
 				return item
 			},
 			async calculateCartSumm () {
-				// const answer1c =  
 				const answer1c = await getCartSumDb ( this.uuidtoadd )
-				this.$store.commit( 'setCart', answer1c )
+				this.$store.commit( 'emptyCart' )
+				answer1c.Products.forEach( uuid => {
+					this.$store.commit( 'addToCart', uuid )
+				});			
 				this.arrCart = this.$store.getters.CARTARR()
 			}
 		},
