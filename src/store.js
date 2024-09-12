@@ -29,8 +29,9 @@ export const store = new Vuex.Store({
             state.tables[tableData.name] = tableData.table
         },
         setCart( state, cartArr ) {
-			cartArr.forEach( element => {
-				this.addToCart( state, element )
+			cartArr.forEach( uuid => {
+				let product = state.tables.StockItemsList.find( element => { return element.UUID == uuid } )
+				state.cart['#value'].OrderedStockItems.push( product )
 			});
         },
 		addToCart( state, uuid ) {

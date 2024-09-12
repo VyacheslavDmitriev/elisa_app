@@ -8,7 +8,7 @@
 		<SearchItemsList v-if="loadedStockItemsList && currMode.mode == 'search'" />
 		<CartItemsList v-if="cartSum && loadedStockItemsList && currMode.mode == 'cart'" />
 		<p v-if="!cartSum && loadedStockItemsList && currMode.mode == 'cart'">В вашей корзине пусто</p>
-		<GroupsOfStockItemsList v-if="loadedStockItemsList && currMode.mode == 'price'" :rootGroups="rootGroupsOfStock" />
+		<GroupsOfStockItemsList v-if="loadedCart && loadedStockItemsList && currMode.mode == 'price'" :rootGroups="rootGroupsOfStock" />
 	</div>
 </template>
 
@@ -29,7 +29,8 @@
 				currMode: {"name":"Каталог", "mode":"price"},
 				loadedStockItemsList: false,
 				groupsOfStock: null,
-				rootGroupsOfStock: null
+				rootGroupsOfStock: null,
+				loadedCart: false
 			}
 		},
 		methods: {
@@ -42,13 +43,14 @@
 				this.$store.commit( 'loadTable', { name: 'StockItemsList', table: _tableItems['#value'].StockItemsList})
 				this.loadedStockItemsList = true
 			},
-			async getInitCart () {
-				const answer1c = await getCartSumDb (  )
-				if ( answer1c && answer1c['#value'] )  {
+			getInitCart () {
+				const answer1c = getCartSumDb (  )
+				if ( answer1c )  {
+
 					this.$store.commit( 'setCart', answer1c.Products )
 					this.loadedCart = true
 				}
-				this.loadedCart = true
+				// this.loadedCart = true
 			}
 		},
 		watch: {
@@ -62,9 +64,9 @@
 				return this.$store.getters.CARTSUM()
 			}
 		},
-		mounted () {
-			this.getStockItemsList()
-			// this.getInitCart()
+		async mounted () {
+			await this.getStockItemsList()
+			this.getInitCart()
 			let params = new URLSearchParams(document.location.search.substring(1))
 			if( params.get('mode') ) this.currMode = this.modeList.find( mode => { return mode.mode == params.get('mode')} )
 		}

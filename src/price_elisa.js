@@ -13,11 +13,11 @@ export const getCartCookies = function () {
 	if ( cartStrUUIDs ) arrCartUUIDs = cartStrUUIDs.split('| ')
 	return arrCartUUIDs
 }
-export const getCartSumDb = async function  ( uuidtoadd = null ) {
+export const getCartSumDb = function  ( uuidtoadd = null ) {
 	var cartLabel = document.getElementById( 'memory-price' )
 	var answer1c = null
 	var arrCartUUIDs = getCartCookies()
-	// console.log( arrCartUUIDs )    
+	console.log( arrCartUUIDs )    
 	document.cookie = `cartsession=${Date.now()}; max-age=360000; path=/`;
 	// add item or remove item from cart
 	if ( uuidtoadd == "clear") {
