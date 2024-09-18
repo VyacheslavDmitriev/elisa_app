@@ -31,7 +31,7 @@ export const store = new Vuex.Store({
         setCart( state, cartArr ) {
 			state.cart['#value'].TotalSum = 0
 			state.cart['#value'].OrderedStockItems = []
-			if ( cartArr )
+			if ( cartArr && cartArr.length )
 				cartArr.forEach( uuid => {
 					let product = state.tables.StockItemsList.find( element => { return element.UUID == uuid } )
 					state.cart['#value'].OrderedStockItems.push( product )
